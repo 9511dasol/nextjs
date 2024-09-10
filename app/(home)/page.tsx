@@ -3,12 +3,12 @@ import { error } from "console";
 import Link from "next/link";
 import Movie from "../../components/movie";
 import styles from "../../styles/home.module.css";
+import { URL } from "../ingredients";
 
 export const metadata = {
   title: "Home",
 }; // 레이아웃에서 굳이 보여줄 필요 없다.
 
-export const URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 async function getMovie() {
   await new Promise((resolve) => setTimeout(resolve, 1000)); //Loding

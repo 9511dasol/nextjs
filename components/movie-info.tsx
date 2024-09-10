@@ -1,11 +1,11 @@
 import axios from "axios";
-import { URL as API_URL } from "../app/(home)/page";
 import info from "../styles/movie-info.module.css";
+import { URL } from "../app/ingredients";
 
 export async function getMovie(id: string) {
   //   await new Promise((resolve) => setTimeout(resolve, 5000));
 
-  return axios(`${API_URL}/${id}`)
+  return axios(`${URL}/${id}`)
     .then((r) => r.data)
     .catch((e) => console.log(e));
 }

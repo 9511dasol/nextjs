@@ -1,11 +1,11 @@
-import { URL as API_URL } from "../app/(home)/page";
 import axios from "axios";
 import styles from "../styles/movie-videos.module.css";
+import { URL } from "../app/ingredients";
 
 export async function getVideos(id: string) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  return axios(`${API_URL}/${id}/videos`)
+  return axios(`${URL}/${id}/videos`)
     .then((response) => response.data)
     .catch((e) => console.log(e));
   // throw new Error('something broke,.,');
