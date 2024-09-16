@@ -4,7 +4,7 @@ Next js 연습용 - movie
 ## 프로젝트 소개 🖥️
 My Portfolio
 
-[demo](https://nextjs-movies-fm3yfb1cd-dasol-hans-projects.vercel.app/)
+[demo](https://nextjs-moviees.vercel.app/)
 
 
 ## 개발 기간 ⏱️
